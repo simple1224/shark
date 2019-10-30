@@ -7,11 +7,11 @@
       <van-tabbar v-model="active" style="z-index: 1999">
         <van-tabbar-item
           v-for="(tab, index) in tabbar"
-          :icon="tab.icon"
           :to="tab.path"
           :dot="tab.dot"
           :info="tab.info"
           :key="index"
+          :class="tab.class"
         >{{tab.name}}</van-tabbar-item>
       </van-tabbar>
     </div>
@@ -36,7 +36,8 @@ export default {
           pathName: 'accountDetails',
           icon: 'records',
           dot: false,
-          info: ''
+          info: '',
+          class: 'iconfont iconxianjinmingxi'
         },
         {
           name: '图表',
@@ -44,7 +45,8 @@ export default {
           pathName: 'pragh',
           icon: 'records',
           dot: false,
-          info: ''
+          info: '',
+          class: 'iconfont iconChart'
         },
         {
           name: '记账',
@@ -52,7 +54,8 @@ export default {
           pathName: 'add',
           icon: 'records',
           dot: false,
-          info: ''
+          info: '',
+          class: 'iconfont iconjia'
         },
         {
           name: '社区',
@@ -60,15 +63,16 @@ export default {
           pathName: 'community',
           icon: 'records',
           dot: false,
-          info: ''
+          info: '',
+          class: 'iconfont icondibudaohanglan-'
         },
         {
           name: '我的',
           path: '/mine',
           pathName: 'mine',
           icon: 'records',
-          dot: true,
-          info: '4'
+          dot: false,
+          class: 'iconfont iconwode'
         }
       ]
     }
@@ -93,5 +97,21 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="less">
+.iconfont {
+  font-size: 13px;
+}
+.van-tabbar-item__text {
+  font-size: 14px;
+}
+.van-tabbar-item--active {
+  // font-size: 30px
+  color: #feec2a;
+}
+.iconxianjinmingxi:before,.iconChart:before,.icondibudaohanglan-:before,.iconwode:before {
+  font-size: 25px;
+}
+.iconjia:before{
+  font-size: 30px;
+}
 </style>

@@ -1,0 +1,198 @@
+{
+  "id": "1482569",
+  "name": "记账 ",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "vue + vant 引入icon",
+  "glyphs": [
+    {
+      "icon_id": "55535",
+      "name": "餐饮",
+      "font_class": "92",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "101245",
+      "name": "娱乐",
+      "font_class": "yule",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "101291",
+      "name": "工资",
+      "font_class": "gongzi",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "554197",
+      "name": "日历",
+      "font_class": "iconset0208",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "654163",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "689299",
+      "name": "图表 柱形图",
+      "font_class": "tubiaozhuxingtu",
+      "unicode": "e81d",
+      "unicode_decimal": 59421
+    },
+    {
+      "icon_id": "1048451",
+      "name": "日用品",
+      "font_class": "riyongpin",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "1079495",
+      "name": "其他收入",
+      "font_class": "qitashouru",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "1079505",
+      "name": "通讯",
+      "font_class": "tongxun",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "1079515",
+      "name": "住房",
+      "font_class": "zhufang",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "1237171",
+      "name": "加号",
+      "font_class": "plus",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "1311619",
+      "name": "购物",
+      "font_class": "gouwu",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "1764101",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "2121768",
+      "name": "零食",
+      "font_class": "lingshi",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "4322608",
+      "name": "升级礼金",
+      "font_class": "shengjilijin",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "4354248",
+      "name": "图表-折线图",
+      "font_class": "tubiao-zhexiantu",
+      "unicode": "eb96",
+      "unicode_decimal": 60310
+    },
+    {
+      "icon_id": "5193364",
+      "name": "蔬菜",
+      "font_class": "shucai",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "5193373",
+      "name": "化妆品",
+      "font_class": "huazhuangpin",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5201454",
+      "name": "花 (5)",
+      "font_class": "hua",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "5219284",
+      "name": "水果",
+      "font_class": "shuiguo",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "5469605",
+      "name": "宠物服饰",
+      "font_class": "chongwufushi",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "6052174",
+      "name": "图表",
+      "font_class": "Chart",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "6965084",
+      "name": "交通",
+      "font_class": "jiaotong",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "7299303",
+      "name": "现金明细",
+      "font_class": "xianjinmingxi",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "8783191",
+      "name": "社区",
+      "font_class": "dibudaohanglan-",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "9452597",
+      "name": "设置",
+      "font_class": "shezhi-",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "9478564",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    }
+  ]
+}
