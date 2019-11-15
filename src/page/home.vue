@@ -108,10 +108,17 @@ export default {
   // font-size: 30px
   color: #feec2a;
 }
-.iconxianjinmingxi:before,.iconChart:before,.icondibudaohanglan-:before,.iconwode:before {
+.iconxianjinmingxi:before,
+.iconChart:before,
+.icondibudaohanglan-:before,
+.iconwode:before {
   font-size: 25px;
 }
-.iconjia:before{
-  font-size: 30px;
+.iconjia:before {
+  font-size: 45px;
+  background-color: #333;
+  color: #feec2a;
+  border-radius: 25px;
+  margin-top: -17px;
 }
 </style>

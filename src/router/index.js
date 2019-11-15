@@ -20,7 +20,7 @@ export default new Router({
     { path: '', redirect: '/login' },
     { path: '/login', name: 'login', component: Login },
     // { path: '/', name: 'home', component: Home },
-    // { path: '/add', name: 'add', component: Add },
+    { path: '/add', name: 'add', component: Add },
     // { path: '/pragh', name: 'pragh', component: Pragh },
     // { path: '/details', name: 'details', component: Details },
     // { path: '/community', name: 'community', component: Community },
@@ -32,7 +32,7 @@ export default new Router({
       component: Home,
       children: [
         // { path: '', redirect: '/exam' },
-        { path: '/add', name: 'add', component: Add, meta: { keepAlive: true } },
+        // { path: '/add', name: 'add', component: Add, meta: { keepAlive: true } },
         { path: '/pragh', name: 'pragh', component: Pragh, meta: { keepAlive: true } },
         { path: '/accountDetails', name: 'accountDetails', component: AccountDetails, meta: { keepAlive: true } },
         { path: '/community', name: 'community', component: Community, meta: { keepAlive: true } },
