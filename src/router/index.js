@@ -5,6 +5,7 @@ import Home from '@/page/home'
 import Add from '@/page/add/add'
 import Pragh from '@/page/pragh/pragh'
 import AccountDetails from '@/page/accountDetails/accountDetails'
+import Setting from '@/page/accountDetails/setting'
 import Community from '@/page/community/community'
 import Mine from '@/page/mine/mine'
 import Login from '@/page/login/login'
@@ -21,13 +22,14 @@ export default new Router({
     { path: '/login', name: 'login', component: Login },
     // { path: '/', name: 'home', component: Home },
     { path: '/add', name: 'add', component: Add },
+    { path: '/setting', name: 'setting', component: Setting },
     // { path: '/pragh', name: 'pragh', component: Pragh },
     // { path: '/details', name: 'details', component: Details },
     // { path: '/community', name: 'community', component: Community },
     // { path: '/mine', name: 'mine', component: Mine },
     // app内页
     {
-      path: '/add',
+      path: '/home',
       name: 'home',
       component: Home,
       children: [

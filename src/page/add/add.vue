@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="addpage">
     <!-- <van-nav-bar title="标题" right-text="返回" left-arrow @click-right="onClickRight" /> -->
     <van-tabs @click="onClick">
       <van-tab title="支出" class="outlay">
@@ -42,12 +42,14 @@ export default {
       this.$toast(title)
     },
     cancel () {
-      this.$router.go(-1)
+      // this.$router.go(-1)
+      this.$router.push({ path: '/accountDetails' })
     },
     openCalculator (item) {
       console.log('打开计算器', item)
       if (item.iconName === '设置') {
         console.log('设置')
+        this.$router.push({ path: '/setting' })
       }
     }
   }
@@ -85,6 +87,7 @@ export default {
     }
     .iconName {
       margin-top: 53px;
+      font-size: 16px;
     }
   }
 }
