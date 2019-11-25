@@ -13,19 +13,52 @@
       <van-tab title="收入" class="income">内容 2</van-tab>
       <van-button class="cancel" @click="cancel">取 消</van-button>
     </van-tabs>
+    <div class="flex"></div>
+    <van-number-keyboard
+      v-model="accountingForm.sum"
+      :show="showAddDialog"
+      theme="custom"
+      extra-key="."
+      close-button-text="完成"
+      @blur="showAddDialog = false"
+      @close="submit"
+    >
+      <template slot="title-left">
+        <div class="flex">
+          <van-field
+            clickable
+            v-model="accountingForm.remark"
+            @touchstart.native.stop="showAddDialog = true"
+            placeholder="请输入备注"
+          />
+          <van-field
+            readonly
+            clickable
+            :value="accountingForm.sum"
+            @touchstart.native.stop="showAddDialog = true"
+          />
+        </div>
+      </template>
+    </van-number-keyboard>
   </div>
 </template>
 
 <script>
-import { Tab, Tabs } from 'vant'
+import { Tab, Tabs, NumberKeyboard } from 'vant'
 export default {
   components: {
     [Tab.name]: Tab,
-    [Tabs.name]: Tabs
+    [Tabs.name]: Tabs,
+    [NumberKeyboard.name]: NumberKeyboard
   },
   name: 'add',
   data () {
     return {
+      showAddDialog: false,
+      accountingForm: {
+        remark: '', // 备注
+        sum: '' // 金额总数
+      },
       iconList: [
         { className: 'iconfont iconjiaotong', iconName: '交通' },
         { className: 'iconfont iconchongwufushi', iconName: '服饰' },
@@ -50,7 +83,12 @@ export default {
       if (item.iconName === '设置') {
         console.log('设置')
         this.$router.push({ path: '/setting' })
+      } else {
+        this.showAddDialog = true
       }
+    },
+    submit () {
+      console.log('提交', this.accountingForm)
     }
   }
 }
@@ -65,6 +103,10 @@ export default {
   background-color: #feec2a;
   border: none;
   color: black;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
 .wrap {
   padding: 10px 0 10px 0;
@@ -88,6 +130,17 @@ export default {
     .iconName {
       margin-top: 53px;
       font-size: 16px;
+    }
+  }
+}
+</style>
+<style lang="less">
+.addpage .van-number-keyboard__title {
+  padding-bottom: 20px !important;
+  .flex .van-cell:last-child {
+    text-align: right;
+    .van-field__control {
+      text-align: right;
     }
   }
 }
